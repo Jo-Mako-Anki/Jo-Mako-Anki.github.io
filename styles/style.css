@@ -217,9 +217,10 @@ span.note {
   font-family: "Roboto", sans-serif;
   color: #b6b6b6;
   max-width: 75ch;
-  margin: 2.25rem 4rem;
+  margin: 2.25rem 1rem;
   margin-bottom: 10rem;
 }
+
 .page-content img {
   display: block;
   max-width: 100%;
@@ -293,6 +294,7 @@ span.note {
 .page-content ol {
   margin-left: 1.5rem;
 }
+
 
 .hero-nav {
   position: absolute;
