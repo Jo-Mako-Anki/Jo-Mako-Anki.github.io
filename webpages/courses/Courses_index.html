@@ -6,13 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jo-Mako's Website</title>
     <link rel="stylesheet" href="../../styles/style.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="../../https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+
+
   </head>
   <body style="display: flex">
     <!-- Navbar Section -->
-    <nav class="navbar" id="navbar" style="position: fixed; width: 100%">
+    <nav class="navbar" id="navbar"  style="position: fixed; width: 100%"s>
       <a href="/" class="navbar__logo">Jo-Mako's Japanese Guide</a>
       <button class="navbar__hamburger" type="button">
         <span class="bar"></span>
@@ -20,72 +22,38 @@
         <span class="bar"></span>
       </button>
       <div class="navbar__menu">
-        <a href="../index.html" class="navbar__menu--links">Home</a>
-        <a href="../guide/Guide_index.html" class="navbar__menu--links">How to Learn Japanese</a>
-        <a href="Courses_index.html" class="navbar__menu--links">Learn Japanese</a>
-        <a href="../tutorials/Tutorials_index.html" class="navbar__menu--links">Tutorials</a>
-        <a href="../resources/Resources_index.html" class="navbar__menu--links">Resources</a>
-        <a href="../downloads/Downloads_index.html" class="navbar__menu--links">Downloads</a>
-        <a href="../updates/Updates_index.html" class="navbar__menu--links">Updates</a>
+
       </div>
     </nav>
 
-    <div style="margin-top: 70px" class="main-container no-toc-layout">
+    <div style="margin-top: 75px" class="main-container no-toc-layout">
       <!-- Left sidebar section -->
       <nav class="sidebar">
         <div class="sidebar-container">
-          <h2></h2>
-          <h2>Guide</h2>
-          <a class="sidebar-container__links" href="introduction.html">Introduction</a>
-          <a class="sidebar-container__links" href="kana.html">Kana</a>
-          <a class="sidebar-container__links" href="kanji.html">Kanji</a>
-          <a class="sidebar-container__links" href="anki.html">Anki</a>
-          <a class="sidebar-container__links sub-item" href="anki-in-depth.html">Anki In-Depth</a>
-          <a class="sidebar-container__links sub-item" href="anki-addons.html">Anki Addons</a>
-          <a class="sidebar-container__links" href="grammar.html">Grammar</a>
-          <a class="sidebar-container__links" href="vocabulary.html">Vocabulary</a>
-          <a class="sidebar-container__links" href="morphman.html">Morphman</a>
-          <a class="sidebar-container__links sub-item" href="morphman-study.html">Study with Morphman</a>
-          <a class="sidebar-container__links sub-item" href="morphman_anime_difficulty.html">Anime Difficulty</a>
-          <a class="sidebar-container__links sub-item" href="morphman_readability.html">Readability List</a>
-          <a class="sidebar-container__links" href="immersion.html">Immersion</a>
+          <h2>Courses</h2>
+          <a class="sidebar-container__links" href="Anime_course/Anime_course_index.html">Anime Course</a>
+          <a class="sidebar-container__links" href="Reading_course/Reading_course_index.html">Reading Course</a>
         </div>
       </nav>
+
 
       <div class="page-content">
-        <section id="anki">
-          <h1>Anki</h1>
-          <h2>Overview</h2>
-          <p>
-            Most of the information here is taken from the
-            <a href="https://docs.ankiweb.net/#/" target="_blank">Anki Manual</a>. Give it a read. It has a lot more
-            information and is very well made.
-          </p>
-          <p>
-            The purpose of this page is to set you up and running with Anki and equip you with all the essential
-            information, so please read all of it before using Anki.
-          </p>
-          <br />
-          <p>In the next page we will get more in-depth on how Anki works and learn about addons.</p>
-          <p>Althought it`s not strictly necessary I recommend giving it a look.</p>
-        </section>
- 
+          <h1>Courses</h1>
+          <section id="information"> 
+            <h2>Information</h2>
+              <p>
+                I've created 2 courses to learn japanese using native media.
+                <br>
+                In both cases you'll learn vocabulary and grammar, they just differ in the order they go about it.
+                <br>
+                That means they're not mutually exclusive and you can study both at the same time.
+              </p>
+            <h3>Anime Course</h3>
+            
+            <h3>Reading Course</h3>
       </div>
 
-      <!-- Right sidebar section -->
 
-      <nav class="sidebar table-of-contents">
-        <div class="sidebar-container">
-          <h2>Table of contents</h2>
-          <a href="#anki">Anki</a>
-          <a href="#what-is-anki">What is Anki</a>
-          <a href="#how-it-works">How it works</a>
-          <a href="#general-settings">General settings</a>
-          <a href="#choosing-steps">Choosing your steps</a>
-          <a href="#adding-material">Adding material</a>
-        </div>
-      </nav>
-    </div>
 
     <!-- Footer section -->
     <footer class="footer" id="footer">
@@ -94,8 +62,22 @@
       <p class="made-by-link">Website made by <a href="https://github.com/B0und">Unbound</a></p>
     </footer>
 
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("jrpg_en");
+        if (x.style.visibility === "hidden") {
+          x.style.visibility = "visible";
+        } else {
+          x.style.visibility = "hidden";
+        }
+      }
+      </script>
+
     <script src="../../js/highlight_active_page.js"></script>
     <script src="../../js/toc_script.js"></script>
     <script src="../../js/toggle_navbar.js"></script>
+    <script src="../../js/toggle_display.js"></script>
+
   </body>
 </html>
