@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jo-Mako's Website</title>
+    <link rel="stylesheet" href="../../../styles/style.css" />
+    <link rel="preconnect" href="../../../https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+    <style>
+      .button {
+        border: none;
+        padding: 16px 16px 16px 16px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        border-radius: 15px;
+      }
+      
+      .button {
+        background-color: #3b3b3b; 
+        color: #afafaf; 
+      }
+      
+      .button:hover {
+        background-color: #313131 ; 
+        color: #c7c7c7;   
+      }
+            </style>
+  </head>
+  <body style="display: flex">
+    <!-- Navbar Section -->
+    <nav class="navbar" id="navbar" style="position: fixed; width: 100%">
+      <a href="/" class="navbar__logo">Jo-Mako's Japanese Guide</a>
+      <button class="navbar__hamburger" type="button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <div class="navbar__menu">
+        <a href="../../index.html" class="navbar__menu--links">Home</a>
+        <a href="../../how_to_learn_japanese/how_to_japanese.html" class="navbar__menu--links">How to Learn Japanese</a>
+        <a href="../../learn_japanese/learn_japanese.html" class="navbar__menu--links">Learn Japanese</a>
+        <a href="../../tutorials/tutorials.html" class="navbar__menu--links">Tutorials</a>
+        <a href="../../resources/resources.html" class="navbar__menu--links">Resources</a>
+        <a href="../../downloads/download.html" class="navbar__menu--links">Downloads</a>
+        <a href="../../updates/updates.html" class="navbar__menu--links">Updates</a>
+      </div>
+    </nav>
+
+    <div style="margin-top: 70px" class="main-container no-toc-layout">
+      <!-- Left sidebar section -->
+      <nav class="sidebar">
+        <div class="sidebar-container">
+          <h2>Learn Japanese</h2>
+          <a class="sidebar-container__links" href=" ">Anime Course</a>
+          <a class="sidebar-container__links" href="Reading_course_index.html">Reading Course</a>
+          <a class="sidebar-container__links" href="../Grammar_References/grammar_references.html ">Grammar References</a>       
+          <h2>Toggle</h2>
+          <button class="button" onclick="w3.toggleShow('.jrpg_jp')">Japanese</button>
+          <button class="button" onclick="w3.toggleShow('.jrpg_en')">English</button>
+          <button class="button" onclick="w3.toggleShow('.jrpg_lesson')">Lesson</button>
+        </div>
+      </nav>
+
+
+      <div class="page-content">
+        <section class="scrollable" id="Information">
+          <h1>Pokemon Fire Red</h1>
+          <img src="../../../assets/courses/PokemonFireRed.jpg" loading="lazy" alt="">
+            <h2>Information</h2>
+              <p>This is where we start. <br>
+              I decided for this game for a few reasons. <br>
+                <ul>
+                 <li>It's Pokemon, so it's pretty popular and appealing as a starting point.</li>
+                 <li>There's a good chance that you at least played the beginning of a Pokemon game, and they are all the same.
+                  <li>It's in Hiragana.</li>
+               </ul>
+              </p>
+               <p>Now, I wondered how to deal with Hiragana for this course. <br>
+                I considered going to Kanji directly, but I though that making at least one game in hiragana would be a good idea to at least show the contrast between kana and Kanji.
+               <br> <br> </p>
+                <p> The second reason is that I'm only going to cover a few new words per game.
+                <br> For this game we are going to focus mostly on particle, which are in kana.
+                <br> There's also some vocabulary, but again, I picked sentences containing words that are usually written in kana anyway.
+               </p>
+              </section>
+
+        <section class="scrollable" id="Vocabulary">              
+            <h2>Vocabulary</h2>     
+            <ul>
+              <li>はじめる (はじめる) - to start</li>
+              <li>わたし (私) - I, me</li>
+              <li>なまえ (名前) - name</li>
+              <li>きみ (君) - you, buddy, pal</li>
+              <li>こいつ - he, she, this fellow, this guy, this person</li>
+              <li>ここ - here</li>
+              <li>こんにちは - hello, good day</li>
+              <li>くん (君) - Mr (junior); master; boy​</li>
+            </ul>
+          </section>
+          
+          
+          <section class="scrollable" id="Grammar">   
+            <h2>Grammar</h2>
+            <ul>
+              <li>の - indicates possessive</li>
+              <li>は - topic marker particle</li>
+              <li> だ - Copula be, is</li>
+              <li> た - Auxiliary verb, indicates past</li>
+              <li> か - Particle, indicates a question</li>
+              <li> な - Ending particle, right ?, isn't it ?</li>
+            </ul>
+          </section>
+
+          <section class="scrollable" id="Lesson">   
+            <h2>Lesson</h2>
+          <p>
+            <div class="jrpg_jp">はじめまして！</br></div><div class="jrpg_en">Hello, there! Glad to meet you!</br></div><img src="../../../assets/courses/paste-46866683133953.jpg" loading="lazy" alt=""><div class="jrpg_lesson">はじめまして is actually the て-Form and polite form of the verb 始める (to start, to begin).&nbsp;<div>&nbsp;</div><div>It's used as a greeting: "Hello" or "Nice to meet you".</div>
+           </div> </br><hr></br> <div class="jrpg_jp">わたしの　なまえは　(オーキド)</br></div><div class="jrpg_en">My name is Oak.</br></div><img src="../../../assets/courses/paste-52918292054017.jpg" loading="lazy" alt=""><div class="jrpg_lesson">わたし means "I" or "me".<div>なまえ means "name".</div><div>の is a particle. Here it means that なまえ belongs to わたし. You can translate by " 's ".</div><div>So わたしの　なまえ means "I's name". So "my name". You also think of it as "name of I".</div><div><br></div><div>オーキド is the name of the character. You'll notice that it's written in Katakana.<br></div><div>That will be the case for other characters but also Pokemon names in the game.</div><div><br></div><div>Since we have "My name は Oak", you may think that it means "My name is Oak".</div><div>So does は means "is" ?</div><div>It doesn't. Never.</div><div>However, most of the time that's how it's translated in english.</div><div><br></div><div>Here's what's actually going on.</div><div>は is the topic particle.&nbsp;</div><div><br></div><div>It doesn't change the information about what's happening in the sentence, it only tells us what we're focusing on.&nbsp;</div><div>は tells us what is the topic, not what is the subject of the sentence.</div><div><div>The real traduction is "as for".</div><div>"As for my name, Oak."</div></div><div><br></div><div><div>The subject of the sentence is actually omitted because we don't need it to understand.</div><div>The subject is "it's".</div></div><div>"As for my name, (<b>it's</b>) Oak."</div>
+            </div> </br><hr></br> <div class="jrpg_jp">きみの　なまえは？</br></div><div class="jrpg_en">Let's begin with your name. Whats is it?</br></div><img src="../../../assets/courses/paste-66168266162177.jpg" loading="lazy" alt=""><div class="jrpg_lesson">きみ means you. の works like 's in english.<div>We saw that わたしの　なまえ means "my name" or "name of I".</div><div>So きみの　なまえ means "name of you", so "your name".</div><div><br></div><div>は is the topic particle.</div><div>It means we want to talk about what's before it.</div><div>We want to talk about "きみの　なまえ", "your name".</div><div>When the sentence ends with "は？" it means we are asking a question about it.</div><div>So: "Your name ...?"</div><div><br></div><div>We do the same thing in english for asking name.</div><div>If I say "I'm Jo. And you are ..."</div><div>We understand that I'm not about to say something about you. I'm asking for your name.</div><div><br></div><div>Sometimes the question mark will not be there, but the sentence works the same way.&nbsp;</div>
+            </div> </br><hr></br> <div class="jrpg_jp">こいつは　わたしの　まご</br></div><div class="jrpg_en">This is my grandson.</br></div><img src="../../../assets/courses/paste-69114613727233.jpg" loading="lazy" alt=""><div class="jrpg_lesson">こいつ is a casual way of saying "this person".<div><div>Okido is actually very casual.</div><div>Since there's no gender, こいつ can be about a guy or a girl.</div><div><br></div></div><div>こいつは means we are talking about こいつ.</div><div>As for this person.</div><div><br></div><div>まご means "grandchild​".</div><div>As before, わたしの means "my", so " わたしの　まご " means "my grandchild".</div><div><br></div><div>As for this person, my grandchild.</div>
+            </div> </br><hr></br> <div class="jrpg_jp">グリーン　だった　かな</br></div><div class="jrpg_en">…Er, was it GREEN?</br></div><img src="../../../assets/courses/paste-73366631350273.jpg" loading="lazy" alt=""><div class="jrpg_lesson">グリーン means Green. That's the name of the character.<div>What about だったかな ?</div><div>Let's break it down.</div><div><br></div><div>We have the copula だ. It states that something is.</div><div>グリーン だ could be a complete copula sentence meaning A is B.<br></div><div>If you look back to the previous we could say: こいつが　グリーン だ.</div><div>Aが Bだ means A is B. But we don't really need the first part to understand the sentence, so we don't say it. You can think of it as "it's" in english. A zero prounoun in japanese.</div><div>So グリーン だ means "it's Green".</div><div><br></div><div>だった is the past form of the copula.</div><div>た usually indicates the verb, or い-adjective or copula is in the past tense.</div><div>グリーン　だった, "It was Green."<br></div><div><br></div><div>かな means "I wonder".</div><div>It's a particle, like は, が or の. But it's a sentence ending particle.</div><div>It's actually two sentence ending particle:&nbsp;</div><div>- か turns a sentence into a question.</div><div>- な can mean a lot of things, but in this case, it's asking for confirmation.</div><div>So かな, is a bit like a question tag in english. "Isn't it ?"</div><div><br></div><div>グリーン　だったかな ?<br></div><div>It was Green wasn't it ?</div><div>It's important to note than even if a sentence ends with a dot instead of a question mark, it would still be exactly the same. Still a question, because it ends in か(な).</div>
+            </div></br><hr></br> <div class="jrpg_jp">ここは　(レッド)の　いえ</br></div><div class="jrpg_en">RED's House.</br></div><img src="../../../assets/courses/paste-219236605624321.jpg" loading="lazy" alt=""><div class="jrpg_lesson">ここ means here.<div>こ, そ, あ and ど (called Kosoado) is a pattern that you'll see often in japanese.</div><div>The first three are relative to a distance (can be abstract), and the last one for a question.</div><div>ここ: here</div><div>そこ: there</div><div>あそこ: over there</div><div>どこ: where ?</div><div><br></div><div>レッド　is our name, the name of the character.</div><div>いえ means house.</div><div>レッド　のいえ means "Red's house" or "House of Red".<br></div><div><br></div><div>ここは　レッド　のいえ<br></div><div>As for here, Red's house</div>
+            </div></br><hr></br> <div class="jrpg_jp">(ナナミ)「こんにちは　(レッド)くん！</br></div><div class="jrpg_en">Hi, RED!</br></div><img src="../../../assets/courses/paste-242833155948545.jpg" loading="lazy" alt=""><div class="jrpg_lesson">Last card of Pokemon Fire Red with two words you problably already know.<div><br></div><div>こんにちは means "Hello" or "Hi".</div><div><br></div><div>くん is a suffix we give to young boys.</div><div>Calling me "レッド" would be impolite, so "レッドくん".</div><div>ちゃん is the suffix for girl.</div><div><br></div><div>ナナミ is Nanami. It's the name of character talking.</div>  
+          </p>
+        </section>
+
+      </div>
+
+      <!-- Right sidebar section -->
+
+      <nav class="sidebar table-of-contents">
+        <div class="sidebar-container">
+          <h2>Pokemon Fire Red</h2>
+          <a href="#Information">Information</a>
+          <a href="#Vocabulary">Vocabulary</a>
+          <a href="#Grammar">Grammar</a>
+          <a href="#Lesson">Lesson</a>
+          <h2>Texts</h2>
+          <a class="sidebar-container__links" href="0-Introduction.html">Introduction</a>
+          <a class="sidebar-container__links" href="2-PokemonHG.html">Pokemon Heart Gold</a>
+        </div>
+      </nav>
+    </div>
+
+
+    <!-- Footer section -->
+    <footer class="footer" id="footer">
+      <p></p>
+      <p class="discord-link">Join <a href="https://discord.com/invite/J9Sw8jdkPY">Discord</a></p>
+      <p class="made-by-link">Website made by <a href="https://github.com/B0und">Unbound</a></p>
+    </footer>
+
+    <script src="../../../js/highlight_active_page.js"></script>
+    <script src="../../../js/toc_script.js"></script>
+    <script src="../../../js/toggle_navbar.js"></script>
+    <script src="../../../js/toggle_display.js"></script>
+  </body>
+</html>
